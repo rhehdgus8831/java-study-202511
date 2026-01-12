@@ -17,7 +17,7 @@ public class Finding {
 
         // 요리 목록에서 모든 요리가 1000칼로리 미만입니까?
         boolean flag2 = Menu.menuList.stream()
-                .anyMatch(menu -> menu.getCalories() < 1000);
+                .allMatch(menu -> menu.getCalories() < 1000);
 
         System.out.println("flag2 = " + flag2);
 
